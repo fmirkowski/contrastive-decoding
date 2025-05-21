@@ -13,7 +13,7 @@ user_message = """When was Joe Biden born?"""
 
 prompt = tokenizer.apply_chat_template(
     [
-        {'role': 'system', 'content': 'You are a helpful assistant'},
+        {'role': 'system', 'content': 'You are a helpfl assistant'},
         {'role': 'user', 'content': user_message}
     ],
     add_generation_prompt=True,
