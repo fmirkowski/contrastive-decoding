@@ -40,5 +40,8 @@ prompt = tokenizer.apply_chat_template(
 )
 
 def contrastive_generation(amateur, expert, prompt, max_tokens) -> str:
-    return ""
+    print(expert(prompt, max_tokens=max_tokens))
+    pass
+
+contrastive_generation(tr.AutoModelForCasualLM.from_pretrained(amateur_path), tr.AutoModelForCasualLM.from_pretrained(expert_path), prompt, 256)
 
